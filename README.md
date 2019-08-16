@@ -26,7 +26,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 -   [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-##Answer
+## Answer
 
 React JS is a front end library that solves issues around DOM manipulation, memory management, reusability, testing, and more. The core problem that React does extremely well is couple JS and HTMl into reusable components that make inserting components into the DOM very fast. React also uses a virtual DOM that is recreated every time state changes and then compares it to the current DOM in order to update only the parts of the DOM that need updating to reduce memory usage and increase efficiency of the browser.
 
@@ -34,7 +34,7 @@ This is best encapsulated with the useEffect hook in our most recent NASA projec
 
 -   [ ] What does it mean to _think_ in react?
 
-##Answer
+## Answer
 
 Thinking in React means to think in components. Usually I follow the following checklist based on a design file.
 
@@ -50,7 +50,7 @@ Usually creating a small map that answers these questions will make development 
 
 -   [ ] Describe state.
 
-##Answer
+## Answer
 
 State is an object that represents the "data" that you want to have at a given moment. In the case of React state is an object of "memory" that a component can use in order to update itself or child components.
 
@@ -58,7 +58,7 @@ In React state is like a variable within a closure in vanilla Javascript. Just l
 
 -   [ ] Describe props.
 
-##Answer
+## Answer
 
 Props are pieces of data that are passed to a component in order to customize the component that props are passed to. This can include state, objects, strings, functions, or even other components, basically any type of data. You can think of props like "propogation", because I want a particular piece of code to propogate downward and be consumed by a child or grandchild.
 
@@ -66,7 +66,7 @@ There are reserved props like "className" in React, but for the most part, you c
 
 -   [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
 
-##Answer
+## Answer
 
 Side Effects are functions that are executed as a "side effect" to some other action occuring. Before hooks in react, side effects included function calls like componentDidMount, componentWillUnmount, shouldComponentUpdate, componentDidUnmount. These were all function that were executed based on a very specific action or occurance of an action outside of it self.
 
