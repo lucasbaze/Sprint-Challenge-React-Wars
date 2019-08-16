@@ -26,14 +26,16 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 -   [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-#Answer
+##Answer
+
 React JS is a front end library that solves issues around DOM manipulation, memory management, reusability, testing, and more. The core problem that React does extremely well is couple JS and HTMl into reusable components that make inserting components into the DOM very fast. React also uses a virtual DOM that is recreated every time state changes and then compares it to the current DOM in order to update only the parts of the DOM that need updating to reduce memory usage and increase efficiency of the browser.
 
 This is best encapsulated with the useEffect hook in our most recent NASA project. With a few lines of code, we could create a reusable "card" representing the photo and it's associated information and then render that to the page. If we wanted to also update that information with a date picker for instance, the only item that gets re-rendered is the card based on the new fetched data. Ultimately this makes building single-page applications REALLY easy.
 
 -   [ ] What does it mean to _think_ in react?
 
-#Answer
+##Answer
+
 Thinking in React means to think in components. Usually I follow the following checklist based on a design file.
 
 1. How many components will I need?
@@ -48,21 +50,24 @@ Usually creating a small map that answers these questions will make development 
 
 -   [ ] Describe state.
 
-#Answer
+##Answer
+
 State is an object that represents the "data" that you want to have at a given moment. In the case of React state is an object of "memory" that a component can use in order to update itself or child components.
 
 In React state is like a variable within a closure in vanilla Javascript. Just like a funciton can call & update variables outside of it's scope, but contained within the scope of the parent function, state in React acts the same way.
 
 -   [ ] Describe props.
 
-#Answer
+##Answer
+
 Props are pieces of data that are passed to a component in order to customize the component that props are passed to. This can include state, objects, strings, functions, or even other components, basically any type of data. You can think of props like "propogation", because I want a particular piece of code to propogate downward and be consumed by a child or grandchild.
 
 There are reserved props like "className" in React, but for the most part, you can create any "prop" and then pass that to a component and consume that prop with props.propName.
 
 -   [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
 
-#Answer
+##Answer
+
 Side Effects are functions that are executed as a "side effect" to some other action occuring. Before hooks in react, side effects included function calls like componentDidMount, componentWillUnmount, shouldComponentUpdate, componentDidUnmount. These were all function that were executed based on a very specific action or occurance of an action outside of it self.
 
 More specifically if let's say you changed the name of a username and you wanted to check the availability of that username while the user is typing. As a developer you would want to send the string that the user is typing into a query that checked if that particular string was taken, and then given that information back to the user. The checking of the name is a "Side Effect" of the user typing.
@@ -78,8 +83,6 @@ useEffect(() => {
 ```
 
 I would get a console.log action every time the stateString was updated.
-
-#Answer
 
 ## Project Set Up
 
